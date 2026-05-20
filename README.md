@@ -267,6 +267,19 @@ flake8 gitish tests
 mypy gitish
 ```
 
+### Pre-commit Hooks (Optional)
+
+```bash
+# Install pre-commit
+pip install pre-commit
+
+# Set up git hooks
+pre-commit install
+
+# Run manually
+pre-commit run --all-files
+```
+
 ### Development Commands
 
 ```bash
