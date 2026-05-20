@@ -11,7 +11,7 @@ APP_NAME = "GitHub Issue Finder"
 USER_AGENT = f"{APP_NAME}/{VERSION}"
 
 # Cache settings
-CACHE_DIR = Path.home() / '.gitish' / 'cache'
+CACHE_DIR = Path.home() / ".gitish" / "cache"
 CACHE_TTL = 300  # 5 minutes
 
 # GitHub API
@@ -23,27 +23,24 @@ DEFAULT_REPO = "symfony"
 # Pre-configured repositories
 REPOSITORIES: Dict[str, str] = {
     # PHP
-    'symfony': 'symfony/symfony',
-    'laravel': 'laravel/framework',
-    'phpunit': 'phpunit/phpunit',
-    'doctrine': 'doctrine/orm',
-    'guzzle': 'guzzle/guzzle',
-    
+    "symfony": "symfony/symfony",
+    "laravel": "laravel/framework",
+    "phpunit": "phpunit/phpunit",
+    "doctrine": "doctrine/orm",
+    "guzzle": "guzzle/guzzle",
     # JavaScript
-    'react': 'facebook/react',
-    'vue': 'vuejs/core',
-    'angular': 'angular/angular',
-    'node': 'nodejs/node',
-    'typescript': 'microsoft/TypeScript',
-    
+    "react": "facebook/react",
+    "vue": "vuejs/core",
+    "angular": "angular/angular",
+    "node": "nodejs/node",
+    "typescript": "microsoft/TypeScript",
     # Python
-    'django': 'django/django',
-    'flask': 'pallets/flask',
-    'pytest': 'pytest-dev/pytest',
-    
+    "django": "django/django",
+    "flask": "pallets/flask",
+    "pytest": "pytest-dev/pytest",
     # Other
-    'rust': 'rust-lang/rust',
-    'go': 'golang/go',
-    'rails': 'rails/rails',
-    'dotnet': 'dotnet/runtime',
+    "rust": "rust-lang/rust",
+    "go": "golang/go",
+    "rails": "rails/rails",
+    "dotnet": "dotnet/runtime",
 }
