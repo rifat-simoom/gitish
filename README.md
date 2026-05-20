@@ -3,7 +3,7 @@
 > **Find truly available open source issues** - Stop wasting time on issues someone is already working on
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Python 3.6+](https://img.shields.io/badge/python-3.6+-blue.svg)](https://www.python.org/downloads/)
+[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![No Dependencies](https://img.shields.io/badge/dependencies-none-green.svg)]()
 [![CI](https://github.com/rifat-simoom/gitish/workflows/CI/badge.svg)](https://github.com/rifat-simoom/gitish/actions)
 [![codecov](https://codecov.io/gh/rifat-simoom/gitish/branch/main/graph/badge.svg)](https://codecov.io/gh/rifat-simoom/gitish)
@@ -57,7 +57,7 @@ pip install -e ".[dev]"
 
 ### Requirements
 
-**Python 3.6+** - That's it! No other dependencies.
+**Python 3.8+** - That's it! No other dependencies.
 
 ## 📖 Usage
 
@@ -180,7 +180,7 @@ Pre-configured with 17 popular projects:
 
 ### Add Custom Repositories
 
-Edit `github_issue_finder/config.py`:
+Edit `gitish/config.py`:
 
 ```python
 REPOSITORIES = {
@@ -374,7 +374,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines.
 pip install -e .
 
 # Or run from project root
-python -m github_issue_finder.cli list
+python -m gitish.cli list
 ```
 
 ## 📝 License

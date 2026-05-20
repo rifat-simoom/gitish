@@ -42,7 +42,6 @@ Thumbs.db
 
 # Application cache
 .gitish/
-.gitish/
 
 # Testing and coverage
 .pytest_cache/
