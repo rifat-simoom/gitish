@@ -17,7 +17,7 @@ def create_parser() -> argparse.ArgumentParser:
         Configured ArgumentParser
     """
     parser = argparse.ArgumentParser(
-        prog='github-issue-finder',
+        prog='gitish',
         description=f'{APP_NAME} - Find truly available open source issues',
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""

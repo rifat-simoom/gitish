@@ -239,7 +239,7 @@ Development commands:
 
 ### Setup
 ```bash
-git clone https://github.com/yourusername/gitish.git
+git clone https://github.com/rifat-simoom/gitish.git
 cd gitish
 pip install -e ".[dev]"
 ```

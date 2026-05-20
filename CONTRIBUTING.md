@@ -5,7 +5,7 @@ Thank you for your interest in contributing to Gitish! This document provides gu
 ## 🚀 Quick Start
 
 1. Fork the repository
-2. Clone your fork: `git clone https://github.com/yourusername/gitish.git`
+2. Clone your fork: `git clone https://github.com/rifat-simoom/gitish.git`
 3. Create a branch: `git checkout -b feature/your-feature`
 4. Make your changes
 5. Run tests: `make test`
@@ -26,7 +26,7 @@ Thank you for your interest in contributing to Gitish! This document provides gu
 
 ```bash
 # Clone your fork
-git clone https://github.com/yourusername/gitish.git
+git clone https://github.com/rifat-simoom/gitish.git
 cd gitish
 
 # Install in development mode

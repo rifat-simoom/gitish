@@ -31,10 +31,10 @@ classifiers = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/yourusername/gitish"
-Documentation = "https://github.com/yourusername/gitish#readme"
-Repository = "https://github.com/yourusername/gitish"
-Issues = "https://github.com/yourusername/gitish/issues"
+Homepage = "https://github.com/rifat-simoom/gitish"
+Documentation = "https://github.com/rifat-simoom/gitish#readme"
+Repository = "https://github.com/rifat-simoom/gitish"
+Issues = "https://github.com/rifat-simoom/gitish/issues"
 
 [project.scripts]
 gitish = "gitish.cli:main"

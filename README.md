@@ -5,8 +5,8 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.6+](https://img.shields.io/badge/python-3.6+-blue.svg)](https://www.python.org/downloads/)
 [![No Dependencies](https://img.shields.io/badge/dependencies-none-green.svg)]()
-[![CI](https://github.com/yourusername/gitish/workflows/CI/badge.svg)](https://github.com/yourusername/gitish/actions)
-[![codecov](https://codecov.io/gh/yourusername/gitish/branch/main/graph/badge.svg)](https://codecov.io/gh/yourusername/gitish)
+[![CI](https://github.com/rifat-simoom/gitish/workflows/CI/badge.svg)](https://github.com/rifat-simoom/gitish/actions)
+[![codecov](https://codecov.io/gh/rifat-simoom/gitish/branch/main/graph/badge.svg)](https://codecov.io/gh/rifat-simoom/gitish)
 
 ## 🎯 The Problem
 
@@ -39,7 +39,7 @@ pip install gitish
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/gitish.git
+git clone https://github.com/rifat-simoom/gitish.git
 cd gitish
 
 # Install
@@ -50,7 +50,7 @@ pip install -e .
 
 ```bash
 # Clone and install with dev dependencies
-git clone https://github.com/yourusername/gitish.git
+git clone https://github.com/rifat-simoom/gitish.git
 cd gitish
 pip install -e ".[dev]"
 ```
@@ -114,7 +114,7 @@ gitish show 12345 symfony
          Comments: 47  Updated: 2025-05-09
 
 💡 Tips:
-   • View details: github-issue-finder show <number> symfony
+   • View details: gitish show <number> symfony
    • Filter: --label="bug" or --label="good first issue"
    • More results: --limit=50
 ```
@@ -192,7 +192,7 @@ REPOSITORIES = {
 Or use `owner/repo` format directly:
 
 ```bash
-github-issue-finder available username/repository
+gitish available username/repository
 ```
 
 ### GitHub Token (Recommended)
@@ -214,7 +214,7 @@ echo 'export GITHUB_TOKEN="your_github_token_here"' >> ~/.bashrc
 1. **Fetches Issues** - Uses GitHub API to get open issues
 2. **Checks Timeline** - Examines timeline for cross-referenced PRs
 3. **Filters Results** - Shows only issues without linked PRs
-4. **Caches Data** - Stores in `~/.github-issue-finder/cache/` for 5 minutes
+4. **Caches Data** - Stores in `~/.gitish/cache/` for 5 minutes
 
 ### Why This Matters
 
@@ -231,7 +231,7 @@ Contributions welcome! This project has a clean architecture that's easy to exte
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/gitish.git
+git clone https://github.com/rifat-simoom/gitish.git
 cd gitish
 
 # Install in development mode with dev dependencies
@@ -303,7 +303,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines.
 - ✅ Clean architecture
 
 ### Planned (v2.0)
-- [ ] Config file support (`~/.github-issue-finder.conf`)
+- [ ] Config file support (`~/.gitish.conf`)
 - [ ] Colorized output with rich/colorama
 - [ ] Progress indicators
 - [ ] Watch for new issues
@@ -389,8 +389,8 @@ MIT License - see [LICENSE](LICENSE) for details.
 
 ## 📞 Support
 
-- 🐛 [Report Issues](https://github.com/yourusername/github-issue-finder/issues)
-- 💬 [Discussions](https://github.com/yourusername/github-issue-finder/discussions)
+- 🐛 [Report Issues](https://github.com/rifat-simoom/gitish/issues)
+- 💬 [Discussions](https://github.com/rifat-simoom/gitish/discussions)
 - ⭐ Star the repo if this helps you!
 
 ## 🌟 Why This Project?

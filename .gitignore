@@ -41,7 +41,7 @@ ENV/
 Thumbs.db
 
 # Application cache
-.github-issue-finder/
+.gitish/
 .gitish/
 
 # Testing and coverage

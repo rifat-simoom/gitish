@@ -11,7 +11,7 @@ APP_NAME = "GitHub Issue Finder"
 USER_AGENT = f"{APP_NAME}/{VERSION}"
 
 # Cache settings
-CACHE_DIR = Path.home() / '.github-issue-finder' / 'cache'
+CACHE_DIR = Path.home() / '.gitish' / 'cache'
 CACHE_TTL = 300  # 5 minutes
 
 # GitHub API
