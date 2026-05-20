@@ -58,8 +58,8 @@ class ShowIssueCommand:
                 print(f"\n=== Linked Pull Requests ({len(linked_prs)}) ===")
                 print(format_pr_list(linked_prs))
                 print(
-                    "\n⚠️  This issue has linked PRs. Check if someone is already"
-                    " working on it!"
+                    "\n⚠️  This issue has linked PRs. Check if someone is already "
+                    "working on it!"
                 )
 
             # Description
@@ -71,8 +71,8 @@ class ShowIssueCommand:
                 print(f"\n=== Comments ({len(comments)}) ===")
                 for i, comment in enumerate(comments, 1):
                     print(
-                        f"\n--- Comment #{i} by {comment['user']['login']} on"
-                        f" {comment['created_at'][:10]} ---"
+                        f"\n--- Comment #{i} by {comment['user']['login']} on "
+                        f"{comment['created_at'][:10]} ---"
                     )
                     body = comment["body"]
                     if len(body) > 500:
