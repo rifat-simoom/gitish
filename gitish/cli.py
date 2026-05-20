@@ -5,8 +5,8 @@ CLI Entry Point - Command-line interface
 import argparse
 import sys
 
-from .config import VERSION, APP_NAME
-from .commands import ListReposCommand, AvailableIssuesCommand, ShowIssueCommand
+from .commands import AvailableIssuesCommand, ListReposCommand, ShowIssueCommand
+from .config import APP_NAME, VERSION
 
 
 def create_parser() -> argparse.ArgumentParser:
@@ -18,7 +18,7 @@ def create_parser() -> argparse.ArgumentParser:
     """
     parser = argparse.ArgumentParser(
         prog="gitish",
-        description=f"{APP_NAME} - Find truly available open source issues",
+        description="Find truly available GitHub issues",
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
 Examples:
@@ -26,7 +26,7 @@ Examples:
   %(prog)s available symfony
   %(prog)s available laravel --label=bug --limit=10
   %(prog)s show 12345 symfony
-  
+
 Environment:
   GITHUB_TOKEN    GitHub personal access token (increases rate limit)
                   Get one at: https://github.com/settings/tokens

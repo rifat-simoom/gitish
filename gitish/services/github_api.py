@@ -7,9 +7,9 @@ import os
 from datetime import datetime, timedelta
 from pathlib import Path
 from typing import Dict, List, Optional
-from urllib.request import Request, urlopen
 from urllib.error import HTTPError
 from urllib.parse import urlencode
+from urllib.request import Request, urlopen
 
 from ..config import CACHE_DIR, CACHE_TTL, GITHUB_API_BASE, USER_AGENT
 

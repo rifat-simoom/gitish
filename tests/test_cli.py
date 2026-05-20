@@ -2,8 +2,10 @@
 Tests for CLI interface
 """
 
+from unittest.mock import Mock, patch
+
 import pytest
-from unittest.mock import patch, Mock
+
 from gitish.cli import create_parser, main
 
 

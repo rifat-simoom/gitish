@@ -2,7 +2,7 @@
 Formatting utilities - Beautiful console output
 """
 
-from typing import List, Dict, Any
+from typing import Any, Dict, List
 
 
 def truncate_text(text: str, max_length: int = 60) -> str:
@@ -69,11 +69,13 @@ def format_issue(issue: Dict[str, Any], show_labels: bool = True) -> str:
 
     # Labels
     if show_labels and issue.get("labels"):
-        label_names = [l["name"] for l in issue["labels"][:3]]
-        labels_str = ", ".join(label_names)
-        if len(issue["labels"]) > 3:
-            labels_str += f" +{len(issue['labels']) - 3}"
-        lines.append(f"         Labels: {labels_str}")
+        label_names = [label["name"] for label in issue["labels"][:5]]
+        labels = ", ".join(label_names)
+        if len(issue["labels"]) > 5:
+            labels += f" (+{len(issue['labels']) - 5} more)"
+    else:
+        labels = "None"
+    lines.append(f"         Labels: {labels}")
 
     # Metadata
     updated = issue["updated_at"][:10]
@@ -119,7 +121,7 @@ def format_labels(labels: List[Dict[str, Any]], max_display: int = 3) -> str:
     if not labels:
         return "None"
 
-    label_names = [l["name"] for l in labels[:max_display]]
+    label_names = [label["name"] for label in labels[:max_display]]
     result = ", ".join(label_names)
 
     if len(labels) > max_display:

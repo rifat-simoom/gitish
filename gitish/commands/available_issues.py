@@ -5,8 +5,8 @@ Available Issues Command - Find issues without linked PRs
 import sys
 from typing import Optional
 
-from ..services import GitHubAPI, RateLimitError, GitHubAPIError
-from ..utils import resolve_repository, RepositoryError, format_issue
+from ..services import GitHubAPI, GitHubAPIError, RateLimitError
+from ..utils import RepositoryError, resolve_repository
 
 
 class AvailableIssuesCommand:
@@ -116,7 +116,7 @@ class AvailableIssuesCommand:
 
             # Format labels
             if issue.get("labels"):
-                label_names = [l["name"] for l in issue["labels"][:3]]
+                label_names = [label["name"] for label in issue["labels"][:3]]
                 labels = ", ".join(label_names)
                 if len(issue["labels"]) > 3:
                     labels += f"... +{len(issue['labels']) - 3}"
@@ -137,11 +137,11 @@ class AvailableIssuesCommand:
 
         # Tips
         print("\n💡")
-        print(f"   • Use: gitish show <number> --repo=alias")
-        print(f'   • Use: --label="Feature" to filter by label')
-        print(f'   • Use: --label="Bug" to find bugs')
-        print(f'   • Use: --label="DX" for Developer Experience issues')
-        print(f"   • Use: --limit=50 to see more results")
+        print("   • Use: gitish show <number> --repo=alias")
+        print('   • Use: --label="Feature" to filter by label')
+        print('   • Use: --label="Bug" to find bugs')
+        print('   • Use: --label="DX" for Developer Experience issues')
+        print("   • Use: --limit=50 to see more results")
 
     def _truncate(self, text, max_length):
         """Truncate text to fit in table cell"""

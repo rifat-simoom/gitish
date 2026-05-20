@@ -3,7 +3,8 @@ Tests for repository utilities
 """
 
 import pytest
-from gitish.utils.repository import resolve_repository, get_repository_list, RepositoryError
+
+from gitish.utils.repository import RepositoryError, get_repository_list, resolve_repository
 
 
 class TestRepositoryUtils:

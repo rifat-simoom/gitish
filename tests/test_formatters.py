@@ -1,9 +1,8 @@
 """
-Tests for formatter utilities
+Tests for formatting utilities
 """
 
-import pytest
-from gitish.utils.formatters import truncate_text, format_labels, format_pr_list
+from gitish.utils.formatters import format_labels, format_pr_list, truncate_text
 
 
 class TestFormatters:

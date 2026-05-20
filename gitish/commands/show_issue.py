@@ -5,8 +5,8 @@ Show Issue Command - Display detailed issue information
 import sys
 from typing import Optional
 
-from ..services import GitHubAPI, RateLimitError, GitHubAPIError
-from ..utils import resolve_repository, RepositoryError, format_pr_list, format_labels
+from ..services import GitHubAPI, GitHubAPIError, RateLimitError
+from ..utils import RepositoryError, format_labels, format_pr_list, resolve_repository
 
 
 class ShowIssueCommand:
@@ -78,20 +78,22 @@ class ShowIssueCommand:
                     else:
                         print(body)
             else:
-                print(f"\n=== Comments ===")
+                print("\n=== Comments ===")
                 print("No comments yet.")
 
             # Next steps
-            print(f"\n=== Next Steps ===")
-            if linked_prs:
-                print("1. Check linked PRs to see current progress")
-                print("2. Consider helping with existing PR or wait for it to be merged")
+            print("\n📌 Next Steps:")
+            print("   • Read the full discussion above")
+            print("   • Check linked PRs to avoid duplicate work")
+
+            if not linked_prs:
+                print("   • This issue appears available - no linked PRs found!")
+                print("   • Consider working on this issue")
             else:
-                print("1. Read the full issue and comments")
-                print("2. Comment to express interest")
-                print("3. Fork the repository and create a branch")
-                print("4. Implement the fix/feature with tests")
-                print("5. Submit a pull request")
+                print("   • Review existing PRs before starting work")
+            print("   • Fork the repository and create a branch")
+            print("   • Implement the fix/feature with tests")
+            print("   • Submit a pull request")
             print()
 
             return 0

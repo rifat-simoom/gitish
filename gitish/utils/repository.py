@@ -5,7 +5,7 @@ Repository utilities - Handle repository resolution and validation
 import re
 from typing import Optional
 
-from ..config import REPOSITORIES, DEFAULT_REPO
+from ..config import DEFAULT_REPO, REPOSITORIES
 
 
 class RepositoryError(Exception):

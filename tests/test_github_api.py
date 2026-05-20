@@ -1,13 +1,12 @@
 """
-Tests for GitHub API service
+Tests for GitHub API client
 """
 
-import json
-import pytest
-from unittest.mock import Mock, patch, mock_open
-from pathlib import Path
+from unittest.mock import Mock, patch
 
-from gitish.services.github_api import GitHubAPI, GitHubAPIError, RateLimitError
+import pytest
+
+from gitish.services.github_api import GitHubAPI, RateLimitError
 
 
 class TestGitHubAPI:
