@@ -58,11 +58,12 @@ class ShowIssueCommand:
                 print(f"\n=== Linked Pull Requests ({len(linked_prs)}) ===")
                 print(format_pr_list(linked_prs))
                 print(
-                    "\n⚠️  This issue has linked PRs. Check if someone is already" " working on it!"
+                    "\n⚠️  This issue has linked PRs. Check if someone is already"
+                    " working on it!"
                 )
 
             # Description
-            print(f"\n=== Description ===")
+            print("\n=== Description ===")
             print(issue["body"] or "No description provided.")
 
             # Comments
