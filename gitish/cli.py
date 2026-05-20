@@ -6,7 +6,7 @@ import argparse
 import sys
 
 from .commands import AvailableIssuesCommand, ListReposCommand, ShowIssueCommand
-from .config import APP_NAME, VERSION
+from .config import VERSION
 
 
 def create_parser() -> argparse.ArgumentParser:
